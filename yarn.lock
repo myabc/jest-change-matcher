@@ -76,6 +76,10 @@
   version "20.0.0"
   resolved "https://registry.yarnpkg.com/@types/jest-diff/-/jest-diff-20.0.0.tgz#3d1acf8d25d878c3566cd13b4e4e1f4fd6640111"
 
+"@types/jest-get-type@^21.0.0":
+  version "21.0.0"
+  resolved "https://registry.yarnpkg.com/@types/jest-get-type/-/jest-get-type-21.0.0.tgz#8107d826963d846896564ee1784fed160cbe408b"
+
 "@types/jest-matcher-utils@^21.0.0":
   version "21.0.0"
   resolved "https://registry.yarnpkg.com/@types/jest-matcher-utils/-/jest-matcher-utils-21.0.0.tgz#51ba2d7905afd11fc38fed5579cb084520b7ff61"

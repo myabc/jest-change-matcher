@@ -8,7 +8,11 @@ import {
 } from 'jest-matcher-utils'
 import diff from 'jest-diff'
 
+import { ensureFunctions } from './utils'
+
 function toChange(this: any, actual: () => void, expected: () => any) {
+  ensureFunctions(actual, expected, '.toChange')
+
   const expectedValue = expected()
   actual() // side-effect
   const receivedValue = expected()

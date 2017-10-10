@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#toChange fails for: "notAFunction" (not a function) and function 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mstring[39m[2m)[22m
+
+Received value must be a function, but instead \\"string\\" was found"
+`;
+
+exports[`#toChange fails for: "notAFunction" and "notAFunction" (neither is a function) 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mstring[39m[2m)[22m
+
+Received value must be a function, but instead \\"string\\" was found"
+`;
+
+exports[`#toChange fails for: [] (not a function) and function 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32marray[39m[2m)[22m
+
+Received value must be a function, but instead \\"array\\" was found"
+`;
+
+exports[`#toChange fails for: [] and [] (neither is a function) 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32marray[39m[2m)[22m
+
+Received value must be a function, but instead \\"array\\" was found"
+`;
+
+exports[`#toChange fails for: {} (not a function) and function 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mobject[39m[2m)[22m
+
+Received value must be a function, but instead \\"object\\" was found"
+`;
+
+exports[`#toChange fails for: {} and {} (neither is a function) 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mobject[39m[2m)[22m
+
+Received value must be a function, but instead \\"object\\" was found"
+`;
+
+exports[`#toChange fails for: 15 (not a function) and function 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mnumber[39m[2m)[22m
+
+Received value must be a function, but instead \\"number\\" was found"
+`;
+
+exports[`#toChange fails for: 15 and 15 (neither is a function) 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mnumber[39m[2m)[22m
+
+Received value must be a function, but instead \\"number\\" was found"
+`;
+
+exports[`#toChange fails for: Symbol() (not a function) and function 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32msymbol[39m[2m)[22m
+
+Received value must be a function, but instead \\"symbol\\" was found"
+`;
+
+exports[`#toChange fails for: Symbol() and Symbol() (neither is a function) 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32msymbol[39m[2m)[22m
+
+Received value must be a function, but instead \\"symbol\\" was found"
+`;
+
+exports[`#toChange fails for: function and "notAFunction" (not a function) 1`] = `
+"[2mexpect([22m[31mactual[39m[2m)[.not].toChange([22m[32mfunction[39m[2m)[22m
+
+Expected value must be a function, but instead \\"string\\" was found"
+`;
+
+exports[`#toChange fails for: function and [] (not a function) 1`] = `
+"[2mexpect([22m[31mactual[39m[2m)[.not].toChange([22m[32mfunction[39m[2m)[22m
+
+Expected value must be a function, but instead \\"array\\" was found"
+`;
+
+exports[`#toChange fails for: function and {} (not a function) 1`] = `
+"[2mexpect([22m[31mactual[39m[2m)[.not].toChange([22m[32mfunction[39m[2m)[22m
+
+Expected value must be a function, but instead \\"object\\" was found"
+`;
+
+exports[`#toChange fails for: function and 15 (not a function) 1`] = `
+"[2mexpect([22m[31mactual[39m[2m)[.not].toChange([22m[32mfunction[39m[2m)[22m
+
+Expected value must be a function, but instead \\"number\\" was found"
+`;
+
+exports[`#toChange fails for: function and Symbol() (not a function) 1`] = `
+"[2mexpect([22m[31mactual[39m[2m)[.not].toChange([22m[32mfunction[39m[2m)[22m
+
+Expected value must be a function, but instead \\"symbol\\" was found"
+`;
+
+exports[`#toChange fails for: function and null (not a function) 1`] = `
+"[2mexpect([22m[31mactual[39m[2m)[.not].toChange([22m[32mfunction[39m[2m)[22m
+
+Expected value must be a function, but instead \\"null\\" was found"
+`;
+
+exports[`#toChange fails for: function and true (not a function) 1`] = `
+"[2mexpect([22m[31mactual[39m[2m)[.not].toChange([22m[32mfunction[39m[2m)[22m
+
+Expected value must be a function, but instead \\"boolean\\" was found"
+`;
+
+exports[`#toChange fails for: function and undefined (not a function) 1`] = `
+"[2mexpect([22m[31mactual[39m[2m)[.not].toChange([22m[32mfunction[39m[2m)[22m
+
+Expected value must be a function, but instead \\"undefined\\" was found"
+`;
+
+exports[`#toChange fails for: null (not a function) and function 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mnull[39m[2m)[22m
+
+Received value must be a function, but instead \\"null\\" was found"
+`;
+
+exports[`#toChange fails for: null and null (neither is a function) 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mnull[39m[2m)[22m
+
+Received value must be a function, but instead \\"null\\" was found"
+`;
+
+exports[`#toChange fails for: true (not a function) and function 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mboolean[39m[2m)[22m
+
+Received value must be a function, but instead \\"boolean\\" was found"
+`;
+
+exports[`#toChange fails for: true and true (neither is a function) 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mboolean[39m[2m)[22m
+
+Received value must be a function, but instead \\"boolean\\" was found"
+`;
+
+exports[`#toChange fails for: undefined (not a function) and function 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mundefined[39m[2m)[22m
+
+Received value must be a function, but instead \\"undefined\\" was found"
+`;
+
+exports[`#toChange fails for: undefined and undefined (neither is a function) 1`] = `
+"[2mexpect([22m[31mfunction[39m[2m)[.not].toChange([22m[32mundefined[39m[2m)[22m
+
+Received value must be a function, but instead \\"undefined\\" was found"
+`;
