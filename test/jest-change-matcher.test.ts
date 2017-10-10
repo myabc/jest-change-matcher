@@ -1,14 +1,24 @@
-import DummyClass from '../src/jest-change-matcher'
+import matcher from '../src/jest-change-matcher'
+import jestExpect from 'expect'
 
-/**
- * Dummy test
- */
-describe('Dummy test', () => {
-  it('works if true is truthy', () => {
-    expect(true).toBeTruthy()
+jestExpect.extend(matcher)
+
+describe('#toChange', () => {
+  it('fails for', () => {
+    let a = 0
+    expect(() =>
+      jestExpect(() => {
+        a = a
+      }).toChange(() => a)
+    ).toThrowErrorMatchingSnapshot()
   })
 
-  it('DummyClass is instantiable', () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass)
+  it('ok for', () => {
+    let a = 0
+    expect(() =>
+      jestExpect(() => {
+        a += 1
+      }).toChange(() => a)
+    ).not.toThrow()
   })
 })

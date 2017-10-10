@@ -73,6 +73,9 @@
     "collectCoverage": true,
     "mapCoverage": true
   },
+  "peerDependencies": {
+    "jest": "^21.2.1"
+  },
   "devDependencies": {
     "@types/jest": "^21.1.0",
     "@types/node": "^8.0.0",
@@ -102,5 +105,9 @@
     "typedoc": "^0.8.0",
     "typescript": "^2.5.3",
     "validate-commit-msg": "^2.12.2"
+  },
+  "dependencies": {
+    "jest-diff": "^21.2.1",
+    "jest-matcher-utils": "^21.2.1"
   }
 }

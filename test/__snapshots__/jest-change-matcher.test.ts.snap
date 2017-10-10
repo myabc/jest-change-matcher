@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#toChange fails for 1`] = `
+"[2mexpect([22m[31mreceived[39m[2m).toChange([22m[32mexpected[39m[2m)[22m
+
+Expected resolved value to change (using ===):
+  0
+Received:
+  0
+
+Difference:
+
+[2mCompared values have no visual difference.[22m"
+`;
