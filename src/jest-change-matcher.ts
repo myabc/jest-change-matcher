@@ -3,7 +3,7 @@
 
 /// <reference types="jest" />
 
-import { matcherHint } from 'jest-matcher-utils'
+import { matcherHint, printExpected, printReceived } from 'jest-matcher-utils'
 import diff from 'jest-diff'
 
 function toChange(received: Function, expected: Function) {
@@ -18,18 +18,18 @@ function toChange(received: Function, expected: Function) {
         matcherHint('.not.toChange') +
         '\n\n' +
         `Expected resolved value not to change:\n` +
-        `  ${beforeValue}\n` +
+        `  ${printExpected(beforeValue)}\n` +
         `Received:\n` +
-        `  ${newValue}`
+        `  ${printReceived(newValue)}`
     : () => {
         const diffString = diff(newValue, beforeValue)
         return (
           matcherHint('.toChange') +
           '\n\n' +
           `Expected resolved value to change (using ===):\n` +
-          `  ${beforeValue}\n` +
+          `  ${printExpected(beforeValue)}\n` +
           `Received:\n` +
-          `  ${newValue}` +
+          `  ${printReceived(newValue)}` +
           (diffString ? `\n\nDifference:\n\n${diffString}` : '')
         )
       }

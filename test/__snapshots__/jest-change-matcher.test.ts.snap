@@ -4,9 +4,9 @@ exports[`#toChange fails for 1`] = `
 "[2mexpect([22m[31mreceived[39m[2m).toChange([22m[32mexpected[39m[2m)[22m
 
 Expected resolved value to change (using ===):
-  0
+  [32m0[39m
 Received:
-  0
+  [31m0[39m
 
 Difference:
 
