@@ -4,7 +4,7 @@ import sourceMaps from 'rollup-plugin-sourcemaps'
 import camelCase from 'lodash.camelcase'
 
 const pkg = require('./package.json')
-
+const external = Object.keys(pkg.dependencies || {})
 const libraryName = 'jest-change-matcher'
 
 export default {
@@ -15,7 +15,7 @@ export default {
   ],
   sourcemap: true,
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
-  external: [],
+  external,
   watch: {
     include: 'compiled/**'
   },
