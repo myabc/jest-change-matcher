@@ -47,6 +47,10 @@
     lodash "^4.17.4"
     pify "^3.0.0"
 
+"@types/chalk@*":
+  version "0.4.31"
+  resolved "https://registry.yarnpkg.com/@types/chalk/-/chalk-0.4.31.tgz#a31d74241a6b1edbb973cf36d97a2896834a51f9"
+
 "@types/fs-extra@^4.0.0":
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-4.0.2.tgz#7b9b1bbf85962cbe029b5a83c9b530d7c75af3ba"
@@ -67,6 +71,16 @@
 "@types/highlight.js@^9.1.8":
   version "9.1.10"
   resolved "https://registry.yarnpkg.com/@types/highlight.js/-/highlight.js-9.1.10.tgz#b621f809cd9573b80992b90cffc5788208e3069c"
+
+"@types/jest-diff@^20.0.0":
+  version "20.0.0"
+  resolved "https://registry.yarnpkg.com/@types/jest-diff/-/jest-diff-20.0.0.tgz#3d1acf8d25d878c3566cd13b4e4e1f4fd6640111"
+
+"@types/jest-matcher-utils@^21.0.0":
+  version "21.0.0"
+  resolved "https://registry.yarnpkg.com/@types/jest-matcher-utils/-/jest-matcher-utils-21.0.0.tgz#51ba2d7905afd11fc38fed5579cb084520b7ff61"
+  dependencies:
+    "@types/chalk" "*"
 
 "@types/jest@^21.1.0":
   version "21.1.2"

@@ -78,6 +78,8 @@
   },
   "devDependencies": {
     "@types/jest": "^21.1.0",
+    "@types/jest-diff": "^20.0.0",
+    "@types/jest-matcher-utils": "^21.0.0",
     "@types/node": "^8.0.0",
     "colors": "^1.1.2",
     "commitizen": "^2.9.6",
