@@ -1,14 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`#toChange fails for 1`] = `
+exports[`#toChange fails for resolved values that change with '.not' 1`] = `
+"[2mexpect([22m[31mreceived[39m[2m).not.toChange([22m[32mexpected[39m[2m)[22m
+
+Expected resolved value not to change:
+  [32m0[39m
+Received:
+  [31m1[39m"
+`;
+
+exports[`#toChange fails for resolved values that do not change 1`] = `
 "[2mexpect([22m[31mreceived[39m[2m).toChange([22m[32mexpected[39m[2m)[22m
 
 Expected resolved value to change (using ===):
   [32m0[39m
-Received:
-  [31m0[39m
-
-Difference:
-
-[2mCompared values have no visual difference.[22m"
+Received value did not change:
+  [31m0[39m"
 `;

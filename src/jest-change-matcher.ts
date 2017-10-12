@@ -1,36 +1,44 @@
-// Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
-// import "core-js/fn/array.find"
-
 /// <reference types="jest" />
 
-import { matcherHint, printExpected, printReceived } from 'jest-matcher-utils'
+import {
+  matcherHint,
+  printExpected,
+  printReceived,
+  printWithType
+} from 'jest-matcher-utils'
 import diff from 'jest-diff'
 
-function toChange(received: Function, expected: Function) {
-  const beforeValue = expected()
-  received()
-  const newValue = expected()
+function toChange(this: any, actual: () => void, expected: () => any) {
+  const expectedValue = expected()
+  actual() // side-effect
+  const receivedValue = expected()
 
-  const pass = beforeValue !== expected()
+  const pass = expectedValue !== expected()
 
   const message = pass
-    ? () =>
-        matcherHint('.not.toChange') +
-        '\n\n' +
-        `Expected resolved value not to change:\n` +
-        `  ${printExpected(beforeValue)}\n` +
-        `Received:\n` +
-        `  ${printReceived(newValue)}`
+    ? () => {
+        const diffString = diff(receivedValue, expectedValue, {
+          expand: this.expand
+        })
+
+        return (
+          matcherHint('.not.toChange') +
+          '\n\n' +
+          `Expected resolved value not to change:\n` +
+          `  ${printExpected(expectedValue)}\n` +
+          `Received:\n` +
+          `  ${printReceived(receivedValue)}` +
+          (diffString ? `\n\nDifference:\n\n${diffString}` : '')
+        )
+      }
     : () => {
-        const diffString = diff(newValue, beforeValue)
         return (
           matcherHint('.toChange') +
           '\n\n' +
           `Expected resolved value to change (using ===):\n` +
-          `  ${printExpected(beforeValue)}\n` +
-          `Received:\n` +
-          `  ${printReceived(newValue)}` +
-          (diffString ? `\n\nDifference:\n\n${diffString}` : '')
+          `  ${printExpected(expectedValue)}\n` +
+          `Received value did not change:\n` +
+          `  ${printReceived(receivedValue)}`
         )
       }
 
